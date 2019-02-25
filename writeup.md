@@ -32,6 +32,8 @@ I also filter the lines, trying to reduce possible noise, by selecting only the 
 For the selected lines, we append the slope and intercept into an array (leftFit and rightFit), to calculate the average slope and intercept for each line.
 Finally we draw the right and left lane, by calculating the start (bottom end of the image) and end (40% of the actual height starting at the top) point using the formula `y = mx + b`.
 
+[image1]: test_images_output/image_1.png
+
 ### 2. Identify potential shortcomings with your current pipeline
 
 One potential shortcoming would be the incapacity to handle sharp curves. We actually use lines to define the lanes, but they should be defined as splines.
