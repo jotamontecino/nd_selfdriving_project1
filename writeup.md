@@ -9,7 +9,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/grayscale.jpg "Grayscale"
+![image1](./examples/grayscale.jpg "grayscale")
 
 ---
 
@@ -30,9 +30,15 @@ As the axis starting point is on the left top corner, a positive slope means the
 I also filter the lines, trying to reduce possible noise, by selecting only the lines having a possible slope for a road lane (between 0.5 and 0.9).
 
 For the selected lines, we append the slope and intercept into an array (leftFit and rightFit), to calculate the average slope and intercept for each line.
+
+
+![image2](./test_images_output/2-image_1.png "Image containing the filtered lines and the draw lane")
+
+
 Finally we draw the right and left lane, by calculating the start (bottom end of the image) and end (40% of the actual height starting at the top) point using the formula `y = mx + b`.
 
-[image1]: ./test_images_output/image_1.png
+
+![image1](./test_images_output/image_1.png "Final image")
 
 ### 2. Identify potential shortcomings with your current pipeline
 
